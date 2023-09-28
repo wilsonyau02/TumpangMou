@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.membership.MembershipMainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="60dp">
+
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/top_rounded_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/memberTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/membership_bronze_member_title"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/memberTitleUpgrade"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:background="@drawable/edit_text_no_underline"
+                android:paddingStart="20dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:textSize="16sp"
+                android:text="@string/membership_points_upgrade"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/buttonToMembershipStatus"
+                style="@style/TextNoCaps"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/lightGrey"
+                android:drawableEnd="@drawable/baseline_play_arrow_24"
+                android:gravity="start|center_vertical"
+                android:text="@string/membership_main_to_status_button"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_marginTop="281dp"
+        android:background="@color/darkGrey"
+        android:orientation="vertical"
+        android:paddingTop="9dp">
+
+        <TextView
+            android:id="@+id/textViewAvailablePointsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/membership_available_points_title"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewMembershipPoints"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="25dp"
+                android:paddingEnd="0dp"
+                android:text="@string/membership_points"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewMembershipPointsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/membership_points_title"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/memberPointExpiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_no_underline"
+                android:paddingStart="15dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="15dp"
+                android:text="@string/membership_points_expiry"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewMembershipExpiryExplanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingStart="15dp"
+                android:paddingTop="25dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp"
+                android:text="@string/membership_points_notice"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonBackToAccount"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            app:icon="@drawable/baseline_arrow_back_24"
+            app:iconSize="30dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/membershipMainTitle"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:text="@string/account_membership"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

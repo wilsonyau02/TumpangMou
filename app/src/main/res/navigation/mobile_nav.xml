@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_nav"
+    app:startDestination="@id/indexFragment">
+
+    <fragment
+        android:id="@+id/indexFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.index.indexFragment"
+        android:label="indexFragment" >
+        <action
+            android:id="@+id/action_indexFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/indexFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_indexFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/indexFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_indexFragment_to_navigation_driver"
+            app:destination="@id/navigation_driver" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.login.loginFragment"
+        android:label="loginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_driver"
+            app:destination="@id/navigation_driver" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.login.forgetPasswordFragment"
+        android:label="forgetPasswordFragment" >
+        <action
+            android:id="@+id/action_forgetPasswordFragment_to_passwordCodeFragment"
+            app:destination="@id/passwordCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordCodeFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.login.passwordCodeFragment"
+        android:label="passwordCodeFragment" >
+        <action
+            android:id="@+id/action_passwordCodeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.register.registerFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_registerProfilePicFragment"
+            app:destination="@id/registerProfilePicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerProfilePicFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.register.registerProfilePicFragment"
+        android:label="fragment_register_profile_pic"
+        tools:layout="@layout/fragment_register_profile_pic" >
+        <action
+            android:id="@+id/action_registerProfilePicFragment_to_indexFragment"
+            app:destination="@id/indexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.account.editProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_editNameFragment"
+            app:destination="@id/editNameFragment" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_editPhoneNumFragment"
+            app:destination="@id/editPhoneNumFragment" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_editPasswordFragment"
+            app:destination="@id/editPasswordFragment" />
+        <action
+            android:id="@+id/action_editProfileFragment_to_navigation_account"
+            app:destination="@id/navigation_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNameFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.profileEdit.editNameFragment"
+        android:label="fragment_edit_name"
+        tools:layout="@layout/fragment_edit_name" >
+        <action
+            android:id="@+id/action_editNameFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPhoneNumFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.profileEdit.editPhoneNumFragment"
+        android:label="fragment_edit_phone_num"
+        tools:layout="@layout/fragment_edit_phone_num" >
+        <action
+            android:id="@+id/action_editPhoneNumFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPasswordFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.profileEdit.editPasswordFragment"
+        android:label="fragment_edit_password"
+        tools:layout="@layout/fragment_edit_password" >
+        <action
+            android:id="@+id/action_editPasswordFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_driver"
+        android:name="my.edu.tarc.tumpangmou.ui.home.HomeFragment"
+        android:label="@string/title_driver"
+        tools:layout="@layout/fragment_home"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_rides"
+        android:name="my.edu.tarc.tumpangmou.ui.rides.SearchPostFragment"
+        android:label="@string/title_rides"
+        tools:layout="@layout/fragment_search_post" >
+        <action
+            android:id="@+id/action_navigation_rides_to_loadPostFragment"
+            app:destination="@id/loadPostFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="my.edu.tarc.tumpangmou.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="my.edu.tarc.tumpangmou.ui.account.accountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_membershipMainFragment"
+            app:destination="@id/membershipMainFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_indexFragment"
+            app:destination="@id/indexFragment"
+            app:popUpTo="@id/indexFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_createPostFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.home.CreatePostFragment"
+        android:label="fragment_create_post"
+        tools:layout="@layout/fragment_create_post" >
+        <action
+            android:id="@+id/action_navigation_createPostFragment_to_navigation_driver2"
+            app:destination="@id/navigation_driver">
+            <argument
+                android:name="DriverPost"
+                app:argType="my.edu.tarc.tumpangmou.ui.home.DriverPost" />
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/membershipMainFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.membership.MembershipMainFragment"
+        android:label="MembershipMainFragment" >
+        <action
+            android:id="@+id/action_membershipMainFragment_to_membershipContentFragment"
+            app:destination="@id/membershipContentFragment" />
+        <action
+            android:id="@+id/action_membershipMainFragment_to_navigation_account"
+            app:destination="@id/navigation_account" />
+    </fragment>
+    <fragment
+        android:id="@+id/membershipContentFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.membership.MembershipContentFragment"
+        android:label="MembershipContentFragment" >
+        <action
+            android:id="@+id/action_membershipContentFragment_to_membershipMainFragment"
+            app:destination="@id/membershipMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadPostFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.rides.LoadPostFragment"
+        android:label="LoadPostFragment" />
+</navigation>

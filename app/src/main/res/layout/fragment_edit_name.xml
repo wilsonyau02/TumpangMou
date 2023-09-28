@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:backgroundTint="@color/grey">
+
+    <LinearLayout
+        android:id="@+id/upButtonEditNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/upButtonEditName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/upButtonTextEditName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/transparent"
+            android:fontFamily="@font/cooper"
+            android:text="@string/editName"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editNameTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/cooper"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/editNameText"
+        android:textAlignment="textStart"
+        android:textColor="@color/blue"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upButtonEditNameLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editFirstNameInput"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:endIconMode="clear_text"
+        app:helperText="@string/required"
+        app:helperTextTextColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNameTitle"
+        app:placeholderText="@string/firstNameHolder"
+        app:placeholderTextColor="@color/hint"
+        app:counterMaxLength="20"
+        app:counterEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editFirstNameInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New First Name"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            tools:layout_editor_absoluteX="122dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editLastNameInput"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="30dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:helperText="@string/required"
+        app:helperTextTextColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFirstNameInput"
+        app:placeholderText="@string/lastNameHolder"
+        app:placeholderTextColor="@color/hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editLastNameInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Last Name"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            tools:layout_editor_absoluteX="122dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/editNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/cooper"
+        android:text="@string/saveEdit"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/editLastNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/editLastNameInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

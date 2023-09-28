@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_driver">
+
+    <fragment
+        android:id="@+id/navigation_driver"
+        android:name="my.edu.tarc.tumpangmou.ui.home.HomeFragment"
+        android:label="@string/title_driver"
+        tools:layout="@layout/fragment_home"
+        >
+
+        <action
+            android:id="@+id/action_navigation_driver_to_navigation_createPostFragment"
+            app:destination="@id/navigation_createPostFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_rides"
+        android:name="my.edu.tarc.tumpangmou.ui.rides.SearchPostFragment"
+        android:label="@string/title_rides"
+        tools:layout="@layout/fragment_search_post" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="my.edu.tarc.tumpangmou.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="my.edu.tarc.tumpangmou.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/navigation_createPostFragment"
+        android:name="my.edu.tarc.tumpangmou.ui.home.CreatePostFragment"
+        android:label="fragment_create_post"
+        tools:layout="@layout/fragment_create_post" >
+        <action
+            android:id="@+id/action_navigation_createPostFragment_to_navigation_driver2"
+            app:destination="@id/navigation_driver">
+        <argument
+            android:name="DriverPost"
+            app:argType="my.edu.tarc.tumpangmou.ui.home.DriverPost" />
+
+        </action>
+    </fragment>
+</navigation>

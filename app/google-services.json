@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "47659718223",
+    "firebase_url": "https://tumpangmou-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tumpangmou",
+    "storage_bucket": "tumpangmou.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47659718223:android:0da9d8b43ac1ddeb93bc3a",
+        "android_client_info": {
+          "package_name": "my.edu.tar.mobileassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47659718223-sm9iv9irlsm7ivjd88g13iqg0su2r6s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuOjUygaJmcoxRi-5ih4X-M6Gxe3EeE1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47659718223-sm9iv9irlsm7ivjd88g13iqg0su2r6s8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47659718223:android:472f43d916cadb1693bc3a",
+        "android_client_info": {
+          "package_name": "my.edu.tarc.tumpangmou"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47659718223-sm9iv9irlsm7ivjd88g13iqg0su2r6s8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuOjUygaJmcoxRi-5ih4X-M6Gxe3EeE1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47659718223-sm9iv9irlsm7ivjd88g13iqg0su2r6s8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

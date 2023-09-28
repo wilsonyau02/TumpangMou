@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rides.DriverPostFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonBackToLoadPost"
+            android:layout_width="68dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            app:icon="@drawable/baseline_arrow_back_24"
+            app:iconSize="30dp"
+            app:iconTint="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/driverPostTitle"
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/driver_post_title"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/driverImage"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/textViewDriverPostName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/driver_post_driver_name"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDriverDetails"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCarName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:id="@+id/textViewCarName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/driver_post_car_name"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewEditCarName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/driver_post_display_car_name"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lienarLayoutCarColour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:id="@+id/textViewCarColour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/driver_post_car_colour"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewEditCarColour"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/driver_post_display_car_colour"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lienarLayoutCarPlate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:id="@+id/textViewCarPlate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/driver_post_car_plate"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewEditCarPlate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/driver_post_display_car_plate"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDepartureTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:id="@+id/textViewDepartureTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/driver_post_departure_time"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewEditDepartureTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/driver_post_display_departure_time"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutDepartureDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp">
+
+                <TextView
+                    android:id="@+id/textViewDepartureDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/driver_post_departure_date"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewEditDepartureDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/driver_post_display_departure_date"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSourceDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/driver_post_source"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageViewSourceDestination"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/baseline_swap_horiz_24" />
+
+            <TextView
+                android:id="@+id/textViewDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="@string/driver_post_destination"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPriceFree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="0dp"
+                android:text="@string/driver_post_price_free" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:text="@string/driver_post_book"
+                android:layout_marginEnd="15dp"
+                app:cornerRadius="40dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/createButton"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:backgroundTint="@color/lightGrey"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/cooper"
+        app:icon="@android:drawable/ic_menu_add"
+        app:iconTint = "@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ridesPost"
+        android:layout_width="352dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="40dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="20dp"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreate"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/dateIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/calendar_black"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="65dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:text="TextView"
+            android:layout_marginEnd="200dp"/>
+
+        <ImageView
+            android:id="@+id/timeIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/time_black"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="220dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:text="TextView"
+            android:layout_marginEnd="30dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/black"
+            android:translationY="40dp" />
+
+        <ImageView
+            android:id="@+id/carIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/car_black"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/textViewDeparturePlace"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="65dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginEnd="190dp"/>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_black"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/textViewTravellingPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="220dp"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            android:layout_marginTop="40dp"
+            android:text="TextView"
+            android:layout_marginEnd="20dp"/>
+
+
+
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/black"
+            android:translationY="80dp" />
+
+        <ImageView
+            android:id="@+id/pointsIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/baseline_card_giftcard_24"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/textViewDriverPoints"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="65dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="80dp"
+            android:text="TextView"
+            android:layout_marginEnd="200dp"/>
+
+        <ImageView
+            android:id="@+id/passengerIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/passenger_black"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/textViewPassNum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="220dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/black"
+            android:text="TextView"
+            android:layout_marginEnd="30dp"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/black"
+            android:translationY="120dp" />
+
+        <Button
+            android:id="@+id/buttonComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completeButton"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cooper"
+            android:backgroundTint="@color/blue"
+            android:translationX="220dp"
+            android:translationY="130dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/black"
+        android:visibility="invisible"
+
+        android:translationY="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ridesPost" />
+
+    <TextView
+        android:id="@+id/noRecordMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/noRecordsMessage"
+        android:visibility="invisible"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cooper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreate" />
+
+    <TextView
+        android:id="@+id/passengerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:text="@string/passengerHistory"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreate" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="357dp"
+        android:layout_height="278dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passengerTitle"
+        tools:listitem="@layout/request_record" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

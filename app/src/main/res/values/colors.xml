@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0A1342</color>
+    <color name="grey">#F6F8FA</color>
+    <color name="hint">#9FA0A2</color>
+    <color name="lightBlue">#07246B</color>
+    <color name="red">#FF1100</color>
+    <color name="transparent">#00F44336</color>
+    <color name="male">#94C6FA</color>
+    <color name="female">#FA94CE</color>
+    <color name="passwordHint">#757575</color>
+    <color name="darkgrey">#A6A6A6</color>
+    <color name="lightGrey">#C5C5C5</color>
+    <color name="button_pressed">#C7C7C7</color>
+    <color name="button_normal">#000000</color>
+    <color name="halfTransparent">#43000000</color>
+    <color name="darkGrey">#A4A4A4</color>
+    <color name="Parakeet">#03C044</color>
+</resources>

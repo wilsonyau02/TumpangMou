@@ -1,0 +1,199 @@
+<resources>
+    <string name="app_name">Tumpang Mou</string>
+    <string name="signUpButton">Sign Up</string>
+    <string name="loginButton">Login</string>
+    <string name="indexSlogan">Let\'s Tumpang</string>
+
+    <string name="exit_message">Are you sure you want to exit?</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remember">Remember Me</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="emailHolder">Enter email here</string>
+    <string name="passwordHolder">Enter password here</string>
+    <string name="noAccount">Don\'t have an account?</string>
+    <string name="clickHere">Sign Up  </string>
+    <string name="forgetPasswordText1">Please enter the email you signed up with.</string>
+    <string name="forgetPasswordText2">We will send you a verification code.</string>
+    <string name="sendButton">Send</string>
+    <string name="receiveForgetCode">Please enter the code we send you.</string>
+    <string name="code">6-digit code</string>
+    <string name="codeHolder">123456</string>
+    <string name="registerEmail">What\'s your email?</string>
+    <string name="required">Required*</string>
+    <string name="emailSubscriber">I want to get the latest news and\ngood deals from TumpangMou</string>
+    <string name="registerPhone">What\'s your contact number?</string>
+    <string name="phoneHolder">123456789</string>
+    <string name="registerName">What\'s your name?</string>
+    <string name="firstNameHolder">Enter first name here</string>
+    <string name="lastNameHolder">Enter last name here</string>
+    <string name="registerBOD">What\'s your date of birth?</string>
+    <string name="enterDOB">Enter the date</string>
+    <string name="registerGender">What\'s your gender identity?</string>
+    <string name="female">Mrs. / Ms</string>
+    <string name="male">Mr.</string>
+    <string name="preferNo">I\'d rather not say</string>
+    <string name="registerPassword">You\'ll need a password</string>
+    <string name="passwordText1">It must have at least: </string>
+    <string name="passwordText2">\   8 characters </string>
+    <string name="passwordText3">\   1 uppercase letter </string>
+    <string name="passwordText4">\   1 lowercase letter </string>
+    <string name="passwordText5">\   1 number </string>
+    <string name="passwordText6">\   1 special character </string>
+    <string name="registerButton">Register</string>
+    <string name="registerProfile">You\'ll need a profile picture</string>
+    <string name="registerProfileText">Let\'s Smile</string>
+    <string name="registerProfileText2">If you don\'t use a real profile picture, it may reduce the trust others have in you.</string>
+    <string name="accountName">Account Name</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="profile">Profile</string>
+    <string name="saveEdit">Save</string>
+    <string name="cancelEdit">Cancel</string>
+    <string name="editNameText">Sick of your old username? Let\'s give it a facelift!</string>
+    <string name="editName">Edit User Name</string>
+    <string name="editDone">Done</string>
+    <string name="editPhoneNumber">Edit Phone Number</string>
+    <string name="editPhoneNumberText">How should we contact you?</string>
+    <string name="editPasswordText">Please make sure there is nobody besides you.</string>
+    <string name="editPassword">Password</string>
+    <string name="editGender">Gender</string>
+    <string name="editGenderText">Please choose your real gender.</string>
+    <string name="back">back</string>
+
+
+    <string name="title_driver">Driver</string>
+    <string name="title_rides">Rides</string>
+    <string name="title_history">History</string>
+    <string name="title_account">Account</string>
+
+    <!--    By: Wilson-->
+    <string name="createButton">Create Rides</string>
+    <string name="completeButton">Complete</string>
+    <string name="cancelButton">Cancel</string>
+    <string name="postButton">Post</string>
+
+    <!--   Create post -->
+    <string name="departureFrom">Departure from</string>
+    <string name="travellingTo">Travelling to</string>
+    <string-array name="departurePlaceGroup">
+        <item>Select your departure place</item>
+        <item>Columbia Hospital Bus Station</item>
+        <item>LRT Wangsa Maju</item>
+        <item>Melati Utama Bus Station</item>
+        <item>Prima Setapak</item>
+        <item>PV 15 Bus Station</item>
+        <item>PV 12 Bus Station</item>
+        <item>PV 10 Bus Station</item>
+        <item>Setapak Central Bus Station</item>
+        <item>TARUMT Gate 2</item>
+        <item>TARUMT Gate 4</item>
+        <item>TARUMT Main Gate</item>
+    </string-array>
+    <string-array name="travelPlaceGroup">
+        <item>Select your travelling place</item>
+        <item>Columbia Hospital Bus Station</item>
+        <item>LRT Wangsa Maju</item>
+        <item>Melati Utama Bus Station</item>
+        <item>Prima Setapak</item>
+        <item>PV 15 Bus Station</item>
+        <item>PV 12 Bus Station</item>
+        <item>PV 10 Bus Station</item>
+        <item>Setapak Central Bus Station</item>
+        <item>TARUMT Gate 2</item>
+        <item>TARUMT Gate 4</item>
+        <item>TARUMT Main Gate</item>
+    </string-array>
+    <string name="travelDate">Date</string>
+    <string name="travelTime">Time</string>
+    <string name="carPlateNum">Car plate number</string>
+    <string name="carModel">Car model</string>
+    <string name="carColor">Car color</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="passengerNum">Passenger Number</string>
+    <string name="noRecordsMessage">You have not created any rides yet...</string>
+    <string name="url_server">https://tumpangmou.000webhostapp.com/api/</string>
+    <string name="url_read">user/read.php</string>
+    <string name="url_create">user/create.php</string>
+    <string name="postCreated">Post Created</string>
+    <string name="postNotCreated">Error creating post</string>
+    <string name="driverHistory">DRIVER</string>
+    <string name="passengerHistory">Passenger</string>
+    <string name="no_request_message">No one has requested a ride yet. Check back later!</string>
+    <string name="points">points</string>
+    <string name="complete_post">Completed post</string>
+    <string name="post_error">Existing ride must be completed first</string>
+
+
+    <!--    By: Eugene-->
+    <string name="account_membership">Membership</string>
+
+    <!--    Membership status buttonToMembership-->
+    <string name="membership_bronze">Bronze</string>
+    <string name="membership_silver">Silver</string>
+    <string name="membership_gold">Gold</string>
+
+    <!--    Membership content-->
+    <string name="membership_benefits">Membership Benefits</string>
+    <string name="membership_bronze_content">•  Earn 1.0x Points</string>
+    <string name="membership_silver_content">•  Earn 1.5x Points</string>
+    <string name="membership_gold_content">•  Earn 2.0x Points</string>
+
+    <!--    Membership Main-->
+    <string name="membership_main_to_status_button">Membership Level Information</string>
+    <string name="membership_available_points_title">Available Points</string>
+    <string name="membership_points_title">Membership Points</string>
+    <string name="membership_bronze_member_title">Bronze Member</string>
+    <string name="membership_silver_member_title">Silver Member</string>
+    <string name="membership_gold_member_title">Gold Member</string>
+    <string name="membership_points_notice">This is ensure that riders/drivers are frequent users to ensure the safety of everyone involved</string>
+    <string name="membership_points_upgrade">Obtain 200 more points to unlock silver membership</string>
+    <string name="membership_points_expiry">0 Points will expire on dd/mm/yy</string>
+    <string name="membership_points">0</string>
+
+    <!--    Search Post-->
+    <string name="search_post_button">Search</string>
+    <string name="search_post_departureFrom">Departure From</string>
+    <string name="search_post_travellingTo">Travelling To</string>
+    <string name="search_post_date">Date</string>
+    <string name="search_post_pax">Pax</string>
+
+    <!--    Load Post-->
+    <string name="load_post_search">Search...</string>
+    <string name="load_post_driver_name">Driver ID</string>
+    <string name="load_post_car_name">Car Name</string>
+    <string name="load_post_car_colour">Car Colour</string>
+    <string name="load_post_car_plate">Car Plate</string>
+    <string name="load_post_source">Source</string>
+    <string name="load_post_destination">Destination</string>
+    <string name="load_post_departure_time">Time</string>
+    <string name="load_post_departure_date">Date</string>
+    <string name="load_post_points">20 Points</string>
+    <string name="load_post_right_arrow">Right Arrow</string>
+
+    <!--    Driver Post-->
+    <string name="driver_post_title">Driver Post</string>
+    <string name="driver_post_book">Book</string>
+    <string name="driver_post_driver_name">Driver\'s Name</string>
+    <string name="driver_post_car_name">Car Name:</string>
+    <string name="driver_post_car_colour">Car Colour:</string>
+    <string name="driver_post_car_plate">Car Plate:</string>
+    <string name="driver_post_departure_time">Departure Time:</string>
+    <string name="driver_post_departure_date">Departure Date:</string>
+    <string name="driver_post_display_car_name">Display Car Name</string>
+    <string name="driver_post_display_car_colour">Display Car Colour</string>
+    <string name="driver_post_display_car_plate">Display Car Plate</string>
+    <string name="driver_post_display_departure_time">Display Departure Time</string>
+    <string name="driver_post_display_departure_date">Display Departure Date</string>
+    <string name="driver_post_source">Source</string>
+    <string name="driver_post_destination">Destination</string>
+    <string name="driver_post_price_free">Price/Free</string>
+    <string name="surveyForm">Survey Form</string>
+    <string name="no_history_message">No history yet</string>
+
+</resources>

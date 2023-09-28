@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4D4D4"
+    tools:context=".ui.membership.MembershipGoldFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/membershipTitleBronze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/membership_benefits"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/membershipContentGold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingTop="60dp"
+        android:text="@string/membership_gold_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="RtlSymmetry" />
+
+</FrameLayout>

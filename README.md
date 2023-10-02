@@ -22,6 +22,8 @@ Welcome to **TumpangMou**! Our application aims to revolutionize the carpooling 
 ## 👥 Team Members:
 - [Lee Chun Kai](https://github.com/BananaKing123)
 - [Eugene Law Kai Le](https://github.com/EugeneLKL)
+- [Wilson Yau Kai Chun](https://github.com/wilsonyau02)
+
 
 ---
 
